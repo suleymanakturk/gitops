@@ -1,1 +1,10 @@
-Selam
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: httpd
+    image: httpd
+    ports:
+    - containerPort: 80
